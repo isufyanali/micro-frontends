@@ -14,7 +14,6 @@ const remotes = (isServer) => {
     checkout: `checkout@${CHECKOUT_APP_URL}/_next/static/${location}/remoteEntry.js`,
   };
 };
-
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
