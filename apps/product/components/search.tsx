@@ -58,7 +58,7 @@ export default function Search({ ...props }: DialogProps) {
         onClick={() => setShowSearchDialog(true)}
         {...props}
       >
-        <span className="inline-flex">Search demo products...</span>
+        <span className="inline-flex">Searc demo boom...</span>
         <span className="pointer-events-none absolute right-1.5 top-1.5 hidden h-5 select-none items-center gap-1 px-1.5 opacity-100 sm:flex">
           <Iconify icon="solar:magnifer-linear" className="h-5 w-5" />
         </span>
