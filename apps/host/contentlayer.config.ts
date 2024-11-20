@@ -11,7 +11,6 @@ import { codeImport } from "remark-code-import";
 import remarkGfm from "remark-gfm";
 import { getHighlighter, loadTheme } from "shiki";
 import { visit } from "unist-util-visit";
-
 import { rehypeNpmCommand } from "./lib/rehype-npm-command";
 
 const LinksProperties = defineNestedType(() => ({
