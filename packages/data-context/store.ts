@@ -5,7 +5,7 @@ import { PersistGate } from "redux-persist/integration/react";
 import storage from "redux-persist/lib/storage";
 import accountSlice from "./reducers/account-reducer";
 import checkoutSlice from "./reducers/checkout-reducer";
-
+import numberReducer from "./reducers/number-reducer";
 const persistConfig = {
   key: "root",
   storage: storage,
@@ -15,6 +15,7 @@ const persistConfig = {
 const reducers = {
   account: accountSlice,
   checkout: checkoutSlice,
+  number: numberReducer,
 };
 
 const persistedReducer = persistReducer(

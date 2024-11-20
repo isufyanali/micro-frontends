@@ -6,10 +6,12 @@ import { lazy, Suspense } from "react";
 import { paths } from "@repo/utils/routes/paths";
 // skeletons
 import { ProductListSkeleton } from "@repo/ui/components/skeletons/products-skeleton";
-
+import { useSelector } from "react-redux";
+import { RootState } from "../../../../packages/data-context/store";
 const LatestProducts = lazy(() => import("product/latest-products"));
 
 export default function HomeDemo() {
+  const number = useSelector((state: RootState) => state.number.value);
   return (
     <section className="py-8">
       <div className="home-latest mb-10">
@@ -32,6 +34,9 @@ export default function HomeDemo() {
             documentation
           </Link>
           .
+        </p>
+        <p className="text-xl font-semibold mt-4">
+          Entered Number: {number !== null ? number : "No number entered yet"}
         </p>
       </div>
     </section>
